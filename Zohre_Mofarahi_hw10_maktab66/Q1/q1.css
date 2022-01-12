@@ -1,0 +1,47 @@
+.tile {
+
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: red 2px solid;
+  
+}
+
+.board {
+  display: grid;
+  width: fit-content;
+  text-align: center;
+  /* border: red 2px solid; */
+}
+
+.fillO::after {
+
+  display: block;
+  content:"";
+  width: 70px;
+  height: 70px;
+  border: 2px solid tomato;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 12px;
+
+
+}
+
+.fillx::before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 102px;
+  background-color: tomato;
+  transform:rotate(45deg);
+}
+
+.fillx::after {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 102px;
+  background-color: tomato;
+  transform:rotate(-45deg);
+}
